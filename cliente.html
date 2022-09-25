@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <header>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script
+      src="https://kit.fontawesome.com/2132efbb40.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cadastro de Clientes</title>
+  </header>
+  <body>
+    <header>
+      <nav class="topnav">
+        <div class="container">
+          <a href="site.html" title="Home"><i class="fa-solid fa-house"></i></a>
+          <a href="cliente.html">Cadastro de Clientes</a>
+          <a href="produto.html">Listas de Produtos</a>
+          <a href="download.html">Download</a>
+          <a href="index.html" title="Login"
+            ><i class="fa-solid fa-user"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="container">
+        <section id="cadastro">
+          <header>
+            <h1>Cadastro de Clientes</h1>
+          </header>
+          <form>
+            <div class="row">
+              <div class="col-25">
+                <label> Nome: </label>
+              </div>
+              <div class="col-75">
+                <input type="text" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Sexo:</label>
+              </div>
+              <div class="col75">
+                <input type="radio" name="radio_sexo" id="masculino" />
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="radio_sexo" id="feminino" />
+                <label for="feminino">Feminino</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>CPF:</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  required
+                  placeholder="xxx.xxx.xxx-xx"
+                  pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                  \
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label> RG: </label>
+              </div>
+              <div class="col-75">
+                <input type="text" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label> Estado Civil: </label>
+              </div>
+              <div class="col-75">
+                <input type="radio" name="radio_estado_civil" id="casado" />
+                <label for="casado">Casado</label>
+                <input type="radio" name="radio_estado_civil" id="solteiro" />
+                <label for="solteiro">Solteiro</label>
+                <input type="radio" name="radio_estado_civil" id="viuvo" />
+                <label for="viuvo">Viúvo</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label> Região: </label>
+              </div>
+              <div class="col-75">
+                <select>
+                  <optgroup label="Sul">
+                    <option value="Parana">Paraná</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                  </optgroup>
+                  <optgroup label="Sudeste">
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                  </optgroup>
+                  <optgroup label="Centro Oeste">
+                    <option value="Goias">Goiás</option>
+                    <option value="Brasilia">Brasília</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                  </optgroup>
+                  <optgroup label="Nordeste">
+                    <option value="Bahia">Bahia</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Ceara">Ceará</option>
+                  </optgroup>
+                  <optgroup label="Norte">
+                    <option value="Para">Pará</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Amapa">Amapá</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label> Cidade: </label>
+              </div>
+              <div class="col-75">
+                <input type="text" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label> Endereço: </label>
+              </div>
+              <div class="col-75">
+                <input type="text" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label>Telefone: </label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  required
+                  name="tel"
+                  placeholder="(xx)xxxx-xxxx"
+                  pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label> Email: </label>
+              </div>
+              <div class="col-75">
+                <input type="email" required />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <input type="submit" value="Enviar Formulário"/>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div>
+          <h6>About</h6>
+          <p class="text-justify">
+            Exercício do curso de Programação Web 1 do curso de Pós-Graduação em
+            Desenvolvimento Web Mobile do IF-Sudeste MG
+          </p>
+        </div>
+        <hr />
+        <div class="flex-container">
+          <div class="row">
+            <div class="column">
+              <p class="copyright-text">
+                Copyright &copy; 2022 All Rights Reserved by Inácio Arantes M.
+                P. Júnior
+              </p>
+            </div>
+            <div class="column">
+              <ul class="social-icons">
+                <li>
+                  <a
+                    class="github"
+                    href="https://github.com/InacioJunior10"
+                    target="_blank"
+                  >
+                    <i class="fa fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="linkedin"
+                    href="https://www.linkedin.com/in/inacio-junior-10/"
+                    target="_blank"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="facebook"
+                    href="https://www.facebook.com/inacio.junior.336"
+                    target="_blank"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="twitter"
+                    href="https://twitter.com/Inacio_Arantes"
+                    target="_blank"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
